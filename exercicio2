@@ -1,0 +1,39 @@
+using System;
+using System.Globalization;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+
+
+        {
+            //variaveis
+            Console.WriteLine("Digite seu nome:");
+            string ch = (Console.ReadLine());
+            Console.WriteLine("Quantos quartos tem sua casa?");
+            int n1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o preço de um produto");
+            double n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            //vetor
+            Console.WriteLine("Digite seu ultimo nome, idade e altura na mesma linha");
+            string[] vet = Console.ReadLine().Split(' ');
+            string ultimoNome = vet[0];
+            int idade = int.Parse(vet[1]);
+            double altura = double.Parse(vet[2] ,CultureInfo.InvariantCulture);
+
+            //mostrar
+            Console.WriteLine(ch);
+            Console.WriteLine(n1);
+            Console.WriteLine(n2.ToString("f2", CultureInfo.InvariantCulture));
+            Console.WriteLine(ultimoNome);
+            Console.WriteLine(idade);
+            Console.WriteLine(altura.ToString("f2",CultureInfo.InvariantCulture));
+
+
+
+        }
+    }
+}
