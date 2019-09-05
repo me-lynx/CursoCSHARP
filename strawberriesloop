@@ -1,0 +1,24 @@
+using System;
+
+namespace strawberries
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //começa com 0
+            int strawberries = 0;
+
+            // enquanto não tiver 10
+            while (strawberries < 10)
+            {
+                //vai adicionando 1
+                strawberries++;
+                Console.WriteLine($"adding a strawberry. Total strawberries = {strawberries}");
+
+            }
+            //apos as 10, ele mostra que esta cheio
+            Console.WriteLine("Container full!");
+        }
+    }
+}
